@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<div>
+  <header>
+    <p data-text="companyName">Company Name</p>
+    <p data-text="companyTel">Tel:</p>
+  </header>
+  <form action="">
+    <span><p>Imagem do carro</p></span><input data-input="img" type="url" placeholder="http://www.example.com/my_img"><br>
+    <span><p>Marca / Modelo</p></span><input data-input="marca/modelo" type="text"><br>
+    <span><p>Ano</p></span><input data-input="ano" type="text"><br>
+    <span><p>Placa</p></span><input data-input="placa" type="text"><br>
+    <span><p>Cor</p></span><input data-input="cor" type="text"><br>
+    <button data-button='cadastrar'>Cadastrar</button>
+  </form>
+  <br>
+  <table data-table="carros" style="width:80%; border: 2px solid;">
+    <tr>
+      <th>Imagem do Carro</th>
+      <th>Marca/Modelo</th>
+      <th>Ano</th>
+      <th>Placa</th>
+      <th>Cor</th>
+    </tr>
+  </table>
+</div>
+
+  <script src="js/dom.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
