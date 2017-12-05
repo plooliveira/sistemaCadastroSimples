@@ -42,13 +42,15 @@
       var fragment = document.createDocumentFragment()
       var novaLinha = document.createElement('tr')
       var dadosCar = {
-        img : document.createTextNode(car.img),
+        img : document.createElement("img"),
         marca : document.createTextNode(car.marca),
         ano : document.createTextNode(car.ano),
         placa : document.createTextNode(car.placa),
         cor : document.createTextNode(car.cor)
         
       }
+      dadosCar.img.setAttribute('src',car.img)
+      console.log(dadosCar)
         for (const item in dadosCar) {
           var td = document.createElement('td')
           td.appendChild(dadosCar[item])
