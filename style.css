@@ -1,0 +1,9 @@
+.tabela{
+    width:80%; 
+    border: 2px solid;  
+}
+
+.tabela img{
+    max-width: 200px;
+    height: auto;
+}
