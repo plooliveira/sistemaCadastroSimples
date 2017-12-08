@@ -6,22 +6,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
+
   <header>
     <p data-text="companyName">Company Name</p>
     <p data-text="companyTel">Tel:</p>
   </header>
+<div class="main">
   <form action="">
-    <span><p>Imagem do carro</p></span><input data-input="img" type="url" placeholder="http://www.example.com/my_img"><br>
-    <span><p>Marca / Modelo</p></span><input data-input="marca/modelo" type="text"><br>
-    <span><p>Ano</p></span><input data-input="ano" type="text"><br>
-    <span><p>Placa</p></span><input data-input="placa" type="text"><br>
-    <span><p>Cor</p></span><input data-input="cor" type="text"><br>
-    <button data-button='cadastrar'>Cadastrar</button>
+    <ul>
+      <li>
+        <label>Imagem do carro</label>
+        <input data-input="img" type="url" placeholder="http://www.example.com/my_img">
+      </li>  
+      <li>
+        <label>Marca / Modelo</label>
+        <input data-input="marca/modelo" type="text">
+      </li>
+      <li>
+        <label>Ano</label>
+        <input data-input="ano" type="text">
+      </li>
+      <li>
+        <label>Placa</label>
+        <input data-input="placa" type="text">
+      </li>
+      <li>
+        <label>Cor</label>
+        <input data-input="cor" type="text">
+      </li>
+      <li><button data-button='cadastrar'>Cadastrar</button></li>
+    </ul>
+    
   </form>
   <br>
   <table data-table="carros" class="tabela">
-    <tr>
+    <tr class="tr">
       <th>Imagem do Carro</th>
       <th>Marca/Modelo</th>
       <th>Ano</th>

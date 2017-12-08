@@ -61,7 +61,7 @@
         td.appendChild(dadosCar[item]);
         novaLinha.appendChild(td);
       }
-
+      novaLinha.setAttribute('class', 'tabelaLinhas')
       fragment.appendChild(novaLinha);
       $tabelaCarro.get()[0].appendChild(fragment);     
     }
