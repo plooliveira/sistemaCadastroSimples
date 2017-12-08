@@ -1,6 +1,6 @@
 (function(DOM) {
-    'use strict';
-//comentario
+    'use strict'
+    
   function app(){
     //declarando variaveis
     var ajax = new XMLHttpRequest(),
