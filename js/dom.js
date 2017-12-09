@@ -9,13 +9,13 @@
     
     //extende a função DOM para ligar o eventListener
     DOM.prototype.on = function on(event, callback){
-      Array.prototype.forEach.call(this.element, function( item ){
+      Array.prototype.forEach.call(this.element, function( item, index,arr ){
           item.addEventListener(event, callback);
       }, false);
     }
     //extende a função DOM para desligar o eventListener
     DOM.prototype.off = function off(event, callbak){
-       Array.prototype.forEach.call(this.element, function(item){
+       Array.prototype.forEach.call(this.element, function(item,index,arr){
           item.removeEventListener(event, callback);
       }, false);
     }
@@ -81,4 +81,5 @@
       Object.prototype.toString.call(obj) === '[object Undefined]';
     }
     win.dom = DOM;
+    
   })(window, document);

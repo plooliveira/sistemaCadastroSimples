@@ -44,7 +44,7 @@ table{
     text-align: center;
 }
 .tr {
-    border: 2px solid;
+    border: none;
 }
 .tabela img{
     max-width: 200px;
@@ -54,5 +54,11 @@ table{
 .tabelaLinhas{
     text-align: center;
     border: 2px solid;
+    margin-bottom: 20px;
+}
+.tabelaLinhas button{
+    width: 80px;
+    background-color: red;
+    
 }
 
